@@ -1,0 +1,1019 @@
+/* =====================================================
+   ELEGANCE FRAGRANCE CO.
+   LUXURY PERFUME WEBSITE
+   COMPLETE WEBSITE STYLESHEET
+   ===================================================== */
+
+
+/* =====================================================
+   RESET
+   ===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Georgia", "Times New Roman", serif;
+    background: #f7f3ed;
+    color: #1b1815;
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+
+header {
+    background: #0d0d0d;
+    min-height: 95px;
+    padding: 15px 6%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #c8a96b;
+
+    box-shadow:
+        0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+/* LOGO */
+
+.logo {
+    width: 105px;
+    height: auto;
+    display: block;
+
+    transition: 0.4s ease;
+}
+
+.logo:hover {
+    transform: scale(1.04);
+}
+
+
+/* =====================================================
+   NAVIGATION
+   ===================================================== */
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+nav a {
+    position: relative;
+
+    color: #f5eee2;
+    text-decoration: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    padding: 8px 0;
+
+    transition: 0.3s ease;
+}
+
+nav a::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 0;
+    height: 1px;
+
+    background: #d4b06a;
+
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: #d4b06a;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+
+/* =====================================================
+   MAIN
+   ===================================================== */
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 6%;
+
+    animation: pageFade 0.7s ease;
+}
+
+@keyframes pageFade {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =====================================================
+   GENERAL HEADINGS
+   ===================================================== */
+
+h1 {
+    font-size: 46px;
+    font-weight: normal;
+
+    letter-spacing: 2px;
+
+    text-align: center;
+
+    color: #171411;
+
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: normal;
+
+    letter-spacing: 1px;
+
+    color: #9a7737;
+
+    margin-top: 55px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 21px;
+
+    letter-spacing: 1px;
+
+    color: #29231c;
+
+    margin: 20px 0 10px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+/* =====================================================
+   HOME PAGE HERO
+   ===================================================== */
+
+.hero {
+    min-height: 600px;
+
+    background:
+        linear-gradient(
+            rgba(10, 10, 10, 0.55),
+            rgba(10, 10, 10, 0.72)
+        );
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 80px 30px;
+
+    border-bottom: 1px solid #c8a96b;
+
+    box-shadow:
+        inset 0 0 80px rgba(0, 0, 0, 0.5);
+}
+
+
+/* HERO DECORATION */
+
+.hero::before {
+    content: "ELEGANCE • FRAGRANCE • BEAUTY";
+
+    color: #d4b06a;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 12px;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 25px;
+
+    animation: luxuryFade 1.2s ease;
+}
+
+
+/* HERO TITLE */
+
+.hero h1 {
+    color: #f5eee2;
+
+    font-size: 58px;
+
+    letter-spacing: 5px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+
+    animation: luxuryFade 1.4s ease;
+}
+
+
+/* HERO TEXT */
+
+.hero p {
+    color: #eee3d2;
+
+    font-size: 20px;
+
+    max-width: 650px;
+
+    font-style: italic;
+
+    animation: luxuryFade 1.6s ease;
+}
+
+
+/* HERO BUTTON */
+
+.hero a {
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 15px 35px;
+
+    background: #c9a65c;
+
+    color: #111;
+
+    text-decoration: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    border: 1px solid #e2c783;
+
+    transition: 0.4s ease;
+
+    animation: luxuryFade 1.8s ease;
+}
+
+.hero a:hover {
+    background: transparent;
+
+    color: #f5eee2;
+
+    box-shadow:
+        0 0 20px rgba(212, 176, 106, 0.25);
+}
+
+
+@keyframes luxuryFade {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =====================================================
+   CONTENT SECTIONS
+   ===================================================== */
+
+section {
+    margin-bottom: 55px;
+}
+
+main > section {
+    padding: 35px;
+
+    background: #fbf9f5;
+
+    border: 1px solid #e1d6c5;
+
+    box-shadow:
+        0 10px 30px rgba(55, 42, 25, 0.06);
+
+    transition: 0.4s ease;
+}
+
+main > section:hover {
+    box-shadow:
+        0 15px 35px rgba(55, 42, 25, 0.1);
+}
+
+
+/* =====================================================
+   ABOUT PAGE
+   ===================================================== */
+
+main > h1 {
+    position: relative;
+}
+
+main > h1::after {
+    content: "";
+
+    display: block;
+
+    width: 55px;
+    height: 1px;
+
+    background: #c9a65c;
+
+    margin: 15px auto 0;
+}
+
+
+/* About paragraphs */
+
+main > p {
+    max-width: 850px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =====================================================
+   PRODUCTS PAGE
+   ===================================================== */
+
+.product-images {
+    position: relative;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 28px;
+
+    margin: 35px -20px 45px;
+
+    padding: 65px 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #11100f,
+            #24201d 50%,
+            #0b0b0b
+        );
+
+    border-top: 1px solid #c9a65c;
+
+    border-bottom: 1px solid #c9a65c;
+
+    box-shadow:
+        inset 0 0 80px rgba(0, 0, 0, 0.65),
+        0 18px 40px rgba(0, 0, 0, 0.16);
+}
+
+
+/* TOP LUXURY LABEL */
+
+.product-images::before {
+    content: "ELEGANCE FRAGRANCE CO.";
+
+    position: absolute;
+
+    top: 18px;
+
+    left: 0;
+    right: 0;
+
+    text-align: center;
+
+    color: #d4b06a;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 10px;
+
+    letter-spacing: 6px;
+}
+
+
+/* BOTTOM LUXURY LABEL */
+
+.product-images::after {
+    content: "SIGNATURE COLLECTION • EAU DE PARFUM";
+
+    position: absolute;
+
+    bottom: 18px;
+
+    left: 0;
+    right: 0;
+
+    text-align: center;
+
+    color: #9d8b6d;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+}
+
+
+/* PERFUME IMAGES */
+
+.product-images img {
+    width: 155px;
+
+    height: 190px;
+
+    object-fit: contain;
+
+    padding: 12px;
+
+    background: #ffffff;
+
+    border: 1px solid #c9a65c;
+
+    box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.4);
+
+    transition:
+        transform 0.45s ease,
+        box-shadow 0.45s ease,
+        border-color 0.45s ease;
+
+    animation: perfumeFloat 5s ease-in-out infinite;
+}
+
+
+/* STAGGERED ANIMATION */
+
+.product-images img:nth-child(2) {
+    animation-delay: 0.7s;
+}
+
+.product-images img:nth-child(3) {
+    animation-delay: 1.4s;
+}
+
+.product-images img:nth-child(4) {
+    animation-delay: 2.1s;
+}
+
+.product-images img:nth-child(5) {
+    animation-delay: 2.8s;
+}
+
+
+@keyframes perfumeFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+
+/* PRODUCT HOVER */
+
+.product-images img:hover {
+    transform: translateY(-13px) scale(1.04);
+
+    border-color: #e2c783;
+
+    box-shadow:
+        0 25px 45px rgba(0, 0, 0, 0.55),
+        0 0 20px rgba(201, 166, 92, 0.25);
+}
+
+
+/* =====================================================
+   COLLECTION LISTS
+   ===================================================== */
+
+ol,
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+
+/* Make fragrance lists look intentional */
+
+main > ol {
+    max-width: 600px;
+
+    margin: 25px auto 45px;
+
+    padding: 0;
+
+    list-style: none;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    border-top: 1px solid #d5c7b3;
+}
+
+main > ol li {
+    margin: 0;
+
+    padding: 15px;
+
+    text-align: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    color: #40382f;
+
+    border-bottom: 1px solid #d5c7b3;
+
+    transition: 0.3s ease;
+}
+
+main > ol li:hover {
+    color: #9a7737;
+
+    background: #eee7dc;
+}
+
+
+/* =====================================================
+   PRICE LIST
+   ===================================================== */
+
+.price-list-container {
+    max-width: 600px;
+
+    margin: 40px auto 60px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #111111,
+            #25211d
+        );
+
+    border: 1px solid #c9a65c;
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.22);
+}
+
+
+.price-list-container::before {
+    content: "PRICE LIST";
+
+    display: block;
+
+    margin-bottom: 20px;
+
+    color: #d4b06a;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 5px;
+}
+
+
+.price-list {
+    display: block;
+
+    width: 450px;
+
+    max-width: 100%;
+
+    height: auto;
+
+    margin: auto;
+
+    padding: 8px;
+
+    background: white;
+
+    border: 1px solid #c9a65c;
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.35);
+
+    transition: 0.4s ease;
+}
+
+.price-list:hover {
+    transform: scale(1.02);
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.45);
+}
+
+
+/* =====================================================
+   SERVICES PAGE
+   ===================================================== */
+
+main > section {
+    position: relative;
+}
+
+
+/* Service headings */
+
+main > section h2 {
+    color: #9a7737;
+}
+
+
+/* =====================================================
+   ENQUIRY FORM
+   ===================================================== */
+
+form {
+    max-width: 700px;
+
+    margin: 35px auto;
+
+    padding: 40px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #111111,
+            #1d1a17
+        );
+
+    border: 1px solid #c9a65c;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+
+label {
+    display: block;
+
+    color: #d4b06a;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    margin-top: 18px;
+
+    margin-bottom: 7px;
+}
+
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    background: #f8f4ed;
+
+    color: #222;
+
+    border: 1px solid #bca77c;
+
+    outline: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 15px;
+
+    transition: 0.3s ease;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #d4b06a;
+
+    box-shadow:
+        0 0 10px rgba(212, 176, 106, 0.3);
+}
+
+
+textarea {
+    min-height: 140px;
+
+    resize: vertical;
+}
+
+
+/* FORM BUTTON */
+
+button {
+    display: block;
+
+    margin: 25px auto 0;
+
+    padding: 14px 35px;
+
+    background: #c9a65c;
+
+    color: #111;
+
+    border: 1px solid #e1c982;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: 0.35s ease;
+}
+
+button:hover {
+    background: transparent;
+
+    color: #f5eee2;
+
+    border-color: #d4b06a;
+
+    box-shadow:
+        0 0 15px rgba(212, 176, 106, 0.2);
+}
+
+
+/* =====================================================
+   CONTACT PAGE
+   ===================================================== */
+
+.contact-info {
+    text-align: center;
+
+    padding: 40px 30px;
+
+    margin: 30px auto;
+
+    background:
+        linear-gradient(
+            135deg,
+            #111111,
+            #24201d
+        );
+
+    color: #f5eee2;
+
+    border-top: 1px solid #c9a65c;
+
+    border-bottom: 1px solid #c9a65c;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.18);
+}
+
+
+.contact-info h2 {
+    color: #d4b06a;
+
+    margin-top: 15px;
+}
+
+
+.contact-info p {
+    color: #e7ddcf;
+}
+
+
+/* =====================================================
+   LINKS
+   ===================================================== */
+
+main a {
+    color: #9a7737;
+
+    transition: 0.3s ease;
+}
+
+main a:hover {
+    color: #c9a65c;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+footer {
+    background: #0d0d0d;
+
+    color: #cfc4b3;
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    border-top: 1px solid #c9a65c;
+}
+
+
+footer p {
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =====================================================
+   GENERAL IMAGE SETTINGS
+   ===================================================== */
+
+main img {
+    max-width: 100%;
+
+    height: auto;
+}
+
+
+/* =====================================================
+   MOBILE DESIGN
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+
+        gap: 18px;
+
+        padding: 20px;
+    }
+
+
+    nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+
+    nav a {
+        font-size: 11px;
+    }
+
+
+    main {
+        padding: 45px 20px;
+    }
+
+
+    h1 {
+        font-size: 34px;
+    }
+
+
+    h2 {
+        font-size: 25px;
+    }
+
+
+    .hero {
+        min-height: 500px;
+
+        padding: 60px 20px;
+    }
+
+
+    .hero h1 {
+        font-size: 38px;
+
+        letter-spacing: 3px;
+    }
+
+
+    .hero p {
+        font-size: 17px;
+    }
+
+
+    /* PRODUCTS */
+
+    .product-images {
+        margin-left: -10px;
+
+        margin-right: -10px;
+
+        gap: 15px;
+
+        padding: 55px 10px;
+    }
+
+
+    .product-images img {
+        width: 120px;
+
+        height: 150px;
+    }
+
+
+    main > ol {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* FORMS */
+
+    form {
+        padding: 25px;
+    }
+
+
+    /* PRICE LIST */
+
+    .price-list-container {
+        padding: 25px 15px;
+    }
+}
