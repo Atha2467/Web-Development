@@ -188,3 +188,35 @@ Current Stage: Part 1 — HTML / Part 2 — CSS
 Status: In Progress
 
 Part 1 focuses on developing the HTML structure and content of the website. Part 2 focuses on applying CSS styling and improving the visual presentation of the website.
+
+ Part 3: Enhancing Functionality and SEO
+
+Functionality
+- Implemented a JavaScript image gallery lightbox to allow users to view images in a larger format.
+- Added JavaScript validation to the enquiry form to check user input before submission.
+- Added JavaScript validation to the contact form to validate the user's name, email address and message.
+- Connected the enquiry form to Formspree to process customer enquiries.
+- Connected the contact form to Formspree to process contact messages.
+- Added a product search bar to the Products page to help customers search for perfume names.
+- Added a collection filter to allow customers to filter ladies' and men's perfumes.
+- Implemented JavaScript functionality to display matching perfume names and update the search results count.
+
+Search Engine Optimisation (SEO)
+- Added descriptive page titles and meta descriptions to improve search engine visibility.
+- Added descriptive alternative text to website images.
+- Used heading tags to organise website content.
+- Improved internal navigation by linking the website pages.
+- Included a responsive viewport meta tag to support mobile-friendly display.
+
+ Website Deployment
+- Updated the website files and prepared the website for deployment on Netlify.
+- Used GitHub to manage the website source code.
+
+References
+1. MDN Web Docs. (n.d.). *HTML: HyperText Markup Language*. https://developer.mozilla.org/en-US/docs/Web/HTML
+2. MDN Web Docs. (n.d.). *CSS: Cascading Style Sheets*. https://developer.mozilla.org/en-US/docs/Web/CSS
+3. MDN Web Docs. (n.d.). *JavaScript*. https://developer.mozilla.org/en-US/docs/Web/JavaScript
+4. Formspree. (n.d.). *Formspree Documentation*. https://help.formspree.io/
+5. Netlify. (n.d.). *Netlify Documentation*. https://docs.netlify.com/
+6. GitHub. (n.d.). *GitHub Docs*. https://docs.github.com/
+7.
