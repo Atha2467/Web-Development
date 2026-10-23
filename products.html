@@ -1,99 +1,150 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="style/style.css">
+
+    <meta name="description" content="Explore ladies' and men's luxury perfumes at Elegance Fragrance Co. Search our fragrance collections and view our price list.">
+
     <title>Elegance Fragrance Co. | Products</title>
-</head><body><header>
 
-    <img src="images/Logo.jpeg"
-         alt="Elegance Fragrance Co. Logo"
-         width="200">
+    <link rel="stylesheet" href="style/style.css">
+</head>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="products.html">Products</a>
-        <a href="services.html">Services</a>
-        <a href="enquiries.html">Enquiry</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<body>
 
-</header>
+    <!-- HEADER -->
+    <header>
+        <img src="images/Logo.jpeg"
+             alt="Elegance Fragrance Co. Logo"
+             class="logo">
 
-<main>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="About.html">About Us</a>
+            <a href="products.html">Products</a>
+            <a href="services.html">Services</a>
+            <a href="enquiries.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-    <h1>Our Fragrances</h1>
+    <!-- MAIN CONTENT -->
+    <main>
 
-    <p>
-        Explore the fragrance collections available from
-        Elegance Fragrance Co.
-    </p>
+        <h1>Our Fragrances</h1>
 
+        <p>
+            Discover the fragrance collections available at
+            Elegance Fragrance Co. Explore our ladies' and men's
+            collections and find a scent that suits your preference.
+        </p>
 
-    <h2>Ladies Collection</h2>
+        <!-- PRODUCT SEARCH AND FILTER -->
+        <section class="product-search">
+            <h2>Find Your Fragrance</h2>
 
-    
+            <label for="productSearch">Search by perfume name:</label>
+            <input
+                type="search"
+                id="productSearch"
+                placeholder="Try Noir, Oceans, Nature..."
+            >
 
-    <img src="images/Picture 2.jpeg"
-         alt="Ladies fragrance"
-         width="180">
+            <label for="collectionFilter">Choose a collection:</label>
+            <select id="collectionFilter">
+                <option value="all">All Collections</option>
+                <option value="ladies">Ladies</option>
+                <option value="mens">Men's</option>
+            </select>
 
-    <img src="images/Picture 3.jpeg"
-         alt="Ladies fragrance"
-         width="180">
+            <p id="searchMessage" aria-live="polite">
+                Explore our perfume collection.
+            </p>
+        </section>
 
-    <img src="images/Picture 4.jpeg"
-         alt="Ladies fragrance"
-         width="180">
+        <!-- LADIES COLLECTION -->
+        <section class="product-collection" data-category="ladies">
+            <h2>Ladies Collection</h2>
 
-         <ol>
-        <li>Aura</li>
-        <li>Noir</li>
-        <li>Azure</li>
-        
-    </ol>
-    
+            <div class="product-images">
 
+                <img src="images/Picture 2.jpeg"
+                     alt="Ladies perfume collection image">
 
-    <h2>Men's Collection</h2>
-<img src="images/Oceans.jpeg"
-         alt="Men's fragrance"
-         width="180">
-<img src="images/Nature.jpeg"
-         alt="Men fragrance"
-         width="180">
-<img src="images/Iqabunga.jpeg"
-         alt="Men's fragrance"
-         width="180">
+                <img src="images/Picture 3.jpeg"
+                     alt="Ladies perfume collection image">
 
+                <img src="images/Picture 4.jpeg"
+                     alt="Ladies perfume collection image">
 
-    <ol>
-        <li>Oceans</li>
-        <li>Nature</li>
-        <li>Iqabunga</li>
-    </ol>
+            </div>
 
+            <ol class="product-list">
+                <li>Noir</li>
+                <li>Ember</li>
+                <li>Azure</li>
+                <li>Aure</li>
+                <li>Element</li>
+            </ol>
+        </section>
 
-    <h2>Price List</h2>
+        <!-- MEN'S COLLECTION -->
+        <section class="product-collection" data-category="mens">
+            <h2>Men's Collection</h2>
 
-    <p>
-        View our current fragrance prices below.
-    </p>
+            <div class="product-images">
 
-    <img src="images/Price list.jpeg"
-         alt="Elegance Fragrance Co. Price List"
-         width="400">
+                <img src="images/Oceans.jpeg"
+                     alt="Men's perfume collection image">
 
+                <img src="images/Nature.jpeg"
+                     alt="Men's perfume collection image">
 
-</main>
+                <img src="images/Iqabunga.jpeg"
+                     alt="Men's perfume collection image">
 
+            </div>
 
-<footer>
+            <ol class="product-list">
+                <li>Oceans</li>
+                <li>Autumn</li>
+                <li>Spring</li>
+                <li>Nature</li>
+                <li>Iqabunga</li>
+            </ol>
+        </section>
 
-    <p>
-        &copy; 2026 Elegance Fragrance Co. All rights reserved.
-    </p>
+        <!-- PRICE LIST -->
+        <section>
+            <h2>Our Price List</h2>
 
-</footer>
+            <p>
+                View the price list below for information about
+                our fragrance prices.
+            </p>
 
-</body></html>
+            <div class="price-list-container">
+
+                <img src="images/Price list.jpeg"
+                     alt="Elegance Fragrance Co. perfume price list"
+                     class="price-list">
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            &copy; 2026 Elegance Fragrance Co.
+            All rights reserved.
+        </p>
+    </footer>
+
+    <script src="JavaScript/script.js" defer></script>
+
+</body>
+</html>
